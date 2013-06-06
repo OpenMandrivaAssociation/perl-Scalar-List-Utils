@@ -1,15 +1,14 @@
 %define upstream_name    Scalar-List-Utils
-%define upstream_version 1.23
-
+%define upstream_version 1.27
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:	5
+Version:    %perl_convert_version 1.27
+Release:	1
 
 Summary:    List utilities (eg min, max, reduce)
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/List/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:    http://www.cpan.org/modules/by-module/List/Scalar-List-Utils-1.27.tar.gz
 
 BuildRequires: perl(Test::More)
 BuildRequires: perl-devel
@@ -85,3 +84,4 @@ rm -rf %buildroot
 
 * Sun Jul 12 2009 cpan2dist 1.21-1mdv
 - initial mdv release, generated with cpan2dist
+
