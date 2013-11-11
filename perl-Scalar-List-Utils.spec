@@ -1,5 +1,5 @@
 %define upstream_name    Scalar-List-Utils
-%define upstream_version 1.31
+%define upstream_version 1.35
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
 Release:	1
@@ -12,7 +12,6 @@ Source0:    http://www.cpan.org/modules/by-module/List/Scalar-List-Utils-%{upstr
 
 BuildRequires: perl(Test::More)
 BuildRequires: perl-devel
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 'List::Util' contains a selection of subroutines that people have expressed
@@ -37,14 +36,11 @@ defined are
 %{make} test
 
 %install
-rm -rf %buildroot
 %makeinstall_std
 
 %clean
-rm -rf %buildroot
 
 %files
-%defattr(-,root,root)
 %doc Changes README
 %{_mandir}/man3/*
 %perl_vendorlib/*
@@ -84,5 +80,6 @@ rm -rf %buildroot
 
 * Sun Jul 12 2009 cpan2dist 1.21-1mdv
 - initial mdv release, generated with cpan2dist
+
 
 

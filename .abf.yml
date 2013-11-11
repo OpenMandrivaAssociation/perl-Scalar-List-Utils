@@ -1,5 +1,6 @@
 removed_sources:
   Scalar-List-Utils-1.23.tar.gz: e88f4df0d0d64db03f4ad6fa91951571148fa27f
   Scalar-List-Utils-1.27.tar.gz: b5cc59a145463def6978508c7567b4bf8f019c22
-sources:
   Scalar-List-Utils-1.31.tar.gz: 22e28939a9a850429dfcb56a12e25e2bb61c6abc
+sources:
+  Scalar-List-Utils-1.35.tar.gz: 2558937dea12f1f593e9d9b27a1369086f3dae29
