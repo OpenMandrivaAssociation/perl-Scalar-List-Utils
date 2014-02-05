@@ -1,5 +1,5 @@
 %define upstream_name    Scalar-List-Utils
-%define upstream_version 1.35
+%define upstream_version 1.38
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
 Release:	1
@@ -30,10 +30,10 @@ defined are
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
 
-%{make}
+%make
 
 %check
-%{make} test
+%make test
 
 %install
 %makeinstall_std
@@ -80,6 +80,7 @@ defined are
 
 * Sun Jul 12 2009 cpan2dist 1.21-1mdv
 - initial mdv release, generated with cpan2dist
+
 
 
 
